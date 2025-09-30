@@ -1,0 +1,879 @@
+---
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="/Revive-Logo.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Revive Product - Break the Hangover</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.cdnfonts.com/css/ahkio" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<a href="/">
+				<img src="/Revive-Logo.png" alt="Revive" class="logo">
+			</a>
+		</header>
+		<main>
+			<div class="product-container">
+				<div class="product-image-section">
+					<img src="/Revive-Product.png" alt="Revive Product" class="product-image">
+				</div>
+
+				<div class="product-info-section">
+					<p class="product-subtitle">Your Ultimate Recovery Companion</p>
+
+					<div class="product-price">
+						<span class="price-current">9€</span>
+						<span class="price-original">12€</span>
+						<span class="price-badge">25% OFF</span>
+					</div>
+
+					<div class="product-description">
+						<p>Wake up refreshed and ready to seize the day with Revive. Our science-backed formula works while you sleep to accelerate your body's natural recovery process.</p>
+					</div>
+
+					<div class="product-highlights">
+						<div class="highlight-item">
+							<span class="highlight-icon">✓</span>
+							<span>100% Natural Ingredients</span>
+						</div>
+						<div class="highlight-item">
+							<span class="highlight-icon">✓</span>
+							<span>Fast-Acting Formula</span>
+						</div>
+						<div class="highlight-item">
+							<span class="highlight-icon">✓</span>
+							<span>Science-Backed Results</span>
+						</div>
+					</div>
+
+					<div class="quantity-selector">
+						<label for="quantity">Quantity:</label>
+						<div class="quantity-controls">
+							<button class="quantity-btn" id="decrease">-</button>
+							<input type="number" id="quantity" value="1" min="1" max="10">
+							<button class="quantity-btn" id="increase">+</button>
+						</div>
+					</div>
+
+					<button class="add-to-cart-btn">Add to Cart</button>
+
+					<div class="product-features">
+						<div class="feature">
+							<span class="feature-icon">🚚</span>
+							<div>
+								<strong>Free Shipping</strong>
+								<p>On orders over $25</p>
+							</div>
+						</div>
+						<div class="feature">
+							<span class="feature-icon">↩️</span>
+							<div>
+								<strong>30-Day Returns</strong>
+								<p>Money-back guarantee</p>
+							</div>
+						</div>
+						<div class="feature">
+							<span class="feature-icon">🔒</span>
+							<div>
+								<strong>Secure Checkout</strong>
+								<p>Safe & encrypted</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="product-details">
+				<h2>What's Inside</h2>
+				<div class="details-grid">
+					<div class="detail-card">
+						<h3>🧬 Science-Backed Formula</h3>
+						<p>Developed with leading nutritionists and backed by extensive research on alcohol metabolism</p>
+					</div>
+					<div class="detail-card">
+						<h3>⚡ Fast-Acting</h3>
+						<p>Works within 30 minutes. Accelerates your body's natural detoxification while you sleep</p>
+					</div>
+					<div class="detail-card">
+						<h3>🌿 100% Natural</h3>
+						<p>Premium plant extracts, vitamins, and electrolytes. No artificial additives</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="how-to-use">
+				<h2>How to Use</h2>
+				<div class="usage-steps">
+					<div class="usage-step">
+						<div class="step-number">1</div>
+						<h3>Take Before Sleep</h3>
+						<p>Just one capsule before bed after drinking</p>
+					</div>
+					<div class="usage-step">
+						<div class="step-number">2</div>
+						<h3>Let It Work</h3>
+						<p>Our formula activates while you sleep</p>
+					</div>
+					<div class="usage-step">
+						<div class="step-number">3</div>
+						<h3>Wake Up Fresh</h3>
+						<p>Start your day without the hangover</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="stories">
+				<div class="stories-background">
+					<div class="stories-container">
+						<h2>Real Stories, Real Results</h2>
+						<div class="credits-scroll">
+							<div class="credit-item">
+								<p class="story-title">The "I Have a Meeting at 8AM" Story</p>
+								<p class="story-text">Sarah thought she could handle "just one more drink" on a Tuesday night. Revive had other plans. Woke up fresh, crushed her presentation, got promoted. Coincidence? We think not.</p>
+							</div>
+
+							<div class="credit-item">
+								<p class="story-title">The Wedding Speech Survivor</p>
+								<p class="story-text">Mike was the best man. Mike had 7 champagne toasts. Mike took Revive. Mike's speech was legendary (in a good way). The bride still thanks him.</p>
+							</div>
+
+							<div class="credit-item">
+								<p class="story-title">The "Oops, I Did It Again" Chronicles</p>
+								<p class="story-text">Jenny swore she'd never drink on a work night again. That was 3 months ago. She's still going strong thanks to her secret weapon. Her coworkers think she's superhuman.</p>
+							</div>
+
+							<div class="credit-item">
+								<p class="story-title">The Brunch Champion</p>
+								<p class="story-text">David discovered that bottomless mimosas + Revive = actually showing up to Sunday yoga. His instructor is confused but impressed.</p>
+							</div>
+
+							<div class="credit-item">
+								<p class="story-title">The Festival Legend</p>
+								<p class="story-text">Emma went to a 3-day music festival. Armed with Revive, she outlasted friends half her age. Day 3 and still dancing. The youth were shook.</p>
+							</div>
+
+							<div class="credit-item">
+								<p class="story-title">The Plot Twist</p>
+								<p class="story-text">Tom bought Revive as a joke gift for his roommate. Tried it himself "just to see." Now fights his roommate over the last capsule. Friendship: tested.</p>
+							</div>
+
+							<div class="credit-item">
+								<p class="story-title">The Parent Hack</p>
+								<p class="story-text">Lisa had wine night with the girls. Kids don't care about hangovers. Revive saved her from the 6AM "Mom, I'm hungry" wake-up call. Parenting level: Expert.</p>
+							</div>
+
+							<div class="credit-item final">
+								<p class="story-title">Your Story Starts Here</p>
+								<p class="story-text">Don't let tomorrow pay for tonight's fun. Get Revive. Wake up fresh. Be legendary.</p>
+							</div>
+
+							<div class="credit-item final-logo">
+								<img src="/Revive-Logo.png" alt="Revive">
+								<p>Break the Hangover</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer-content">
+				<div class="footer-section">
+					<img src="/Revive-Logo.png" alt="Revive" class="footer-logo">
+					<p class="footer-tagline">Your ultimate recovery companion</p>
+				</div>
+
+				<div class="footer-section">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/product">Product</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-section">
+					<h4>Support</h4>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Shipping Info</a></li>
+						<li><a href="#">Returns</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-section">
+					<h4>Legal</h4>
+					<ul>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms of Service</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p>&copy; 2025 Revive. All rights reserved.</p>
+			</div>
+		</footer>
+
+		<style>
+			:root {
+				--dark-green: #1E5631;
+				--bright-lime: #A4DE02;
+				--green: #76BA1B;
+				--medium-green: #4C9A2A;
+				--light-green: #ACDF87;
+				--soft-green: #68BB59;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+				background: #1E5631;
+				color: #defe55;
+				min-height: 100vh;
+				line-height: 1.6;
+			}
+
+			header {
+				text-align: center;
+				padding: 1rem 0;
+				margin: 0;
+			}
+
+			header a {
+				display: inline-block;
+			}
+
+			header .logo {
+				width: 180px;
+				height: auto;
+				cursor: pointer;
+			}
+
+			main {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0.5rem 2rem 3rem;
+			}
+
+			/* Product Container */
+			.product-container {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 4rem;
+				margin-bottom: 3rem;
+				padding: 0.5rem 0;
+			}
+
+			.product-image-section {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: rgba(255, 255, 255, 0.03);
+				border-radius: 30px;
+				padding: 3rem;
+			}
+
+			.product-image {
+				width: 100%;
+				max-width: 400px;
+				height: auto;
+				transform: rotate(15deg);
+				transition: transform 0.3s ease;
+			}
+
+			.product-image:hover {
+				transform: rotate(0deg) scale(1.05);
+			}
+
+			/* Product Info */
+			.product-info-section {
+				display: flex;
+				flex-direction: column;
+				gap: 1.5rem;
+			}
+
+			.product-title {
+				font-family: 'Ahkio', sans-serif;
+				font-size: clamp(3rem, 6vw, 4.5rem);
+				font-weight: 900;
+				color: #defe55;
+				line-height: 1.1;
+				margin: 0;
+			}
+
+			.product-subtitle {
+				font-size: 1.3rem;
+				color: rgba(222, 254, 85, 0.8);
+				font-weight: 400;
+				margin: -0.5rem 0 0 0;
+			}
+
+			.product-price {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+				margin: 1rem 0;
+			}
+
+			.price-current {
+				font-size: 2.5rem;
+				font-weight: 700;
+				color: #defe55;
+			}
+
+			.price-original {
+				font-size: 1.5rem;
+				color: rgba(222, 254, 85, 0.5);
+				text-decoration: line-through;
+			}
+
+			.price-badge {
+				background: #defe55;
+				color: var(--dark-green);
+				padding: 0.3rem 0.8rem;
+				border-radius: 20px;
+				font-size: 0.9rem;
+				font-weight: 700;
+			}
+
+			.product-description {
+				font-size: 1.1rem;
+				color: rgba(222, 254, 85, 0.85);
+				line-height: 1.7;
+			}
+
+			.product-highlights {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 1rem;
+				margin: 1rem 0;
+			}
+
+			.highlight-item {
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+				color: rgba(222, 254, 85, 0.9);
+			}
+
+			.highlight-icon {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 20px;
+				height: 20px;
+				background: #defe55;
+				color: var(--dark-green);
+				border-radius: 50%;
+				font-weight: 700;
+				font-size: 0.8rem;
+				flex-shrink: 0;
+			}
+
+			/* Quantity Selector */
+			.quantity-selector {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+			}
+
+			.quantity-selector label {
+				font-size: 1.1rem;
+				font-weight: 600;
+				color: #defe55;
+			}
+
+			.quantity-controls {
+				display: flex;
+				align-items: center;
+				gap: 0;
+				background: rgba(255, 255, 255, 0.05);
+				border-radius: 10px;
+				overflow: hidden;
+			}
+
+			.quantity-btn {
+				width: 40px;
+				height: 40px;
+				background: rgba(222, 254, 85, 0.1);
+				border: none;
+				color: #defe55;
+				font-size: 1.5rem;
+				cursor: pointer;
+				transition: background 0.3s ease;
+			}
+
+			.quantity-btn:hover {
+				background: rgba(222, 254, 85, 0.2);
+			}
+
+			#quantity {
+				width: 60px;
+				height: 40px;
+				text-align: center;
+				border: none;
+				background: transparent;
+				color: #defe55;
+				font-size: 1.1rem;
+				font-weight: 600;
+			}
+
+			#quantity::-webkit-inner-spin-button,
+			#quantity::-webkit-outer-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
+
+			/* Add to Cart Button */
+			.add-to-cart-btn {
+				width: 100%;
+				padding: 1.2rem 2rem;
+				background: #defe55;
+				color: var(--dark-green);
+				border: none;
+				border-radius: 50px;
+				cursor: pointer;
+				font-size: 1.3rem;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				transition: all 0.3s ease;
+				margin-top: 1rem;
+			}
+
+			.add-to-cart-btn:hover {
+				transform: translateY(-3px);
+				opacity: 0.9;
+				box-shadow: 0 10px 30px rgba(222, 254, 85, 0.3);
+			}
+
+			/* Product Features */
+			.product-features {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 1.5rem;
+				margin-top: 2rem;
+				padding-top: 2rem;
+				border-top: 1px solid rgba(222, 254, 85, 0.2);
+			}
+
+			.feature {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				gap: 0.5rem;
+			}
+
+			.feature-icon {
+				font-size: 2rem;
+			}
+
+			.feature strong {
+				color: #defe55;
+				font-size: 1rem;
+				font-weight: 600;
+			}
+
+			.feature p {
+				color: rgba(222, 254, 85, 0.7);
+				font-size: 0.9rem;
+				margin: 0;
+			}
+
+			/* Product Details Section */
+			.product-details {
+				margin: 3rem 0;
+				padding: 2rem 0;
+			}
+
+			.product-details h2 {
+				font-size: clamp(2.5rem, 5vw, 3.5rem);
+				font-weight: 700;
+				color: #defe55;
+				margin-bottom: 2rem;
+				text-align: center;
+			}
+
+			.details-grid {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 2rem;
+			}
+
+			.detail-card {
+				background: rgba(255, 255, 255, 0.05);
+				padding: 2.5rem 2rem;
+				border-radius: 20px;
+				transition: transform 0.3s ease, background 0.3s ease;
+			}
+
+			.detail-card:hover {
+				transform: translateY(-5px);
+				background: rgba(255, 255, 255, 0.08);
+			}
+
+			.detail-card h3 {
+				font-size: 1.5rem;
+				color: #defe55;
+				margin-bottom: 1rem;
+			}
+
+			.detail-card p {
+				color: rgba(222, 254, 85, 0.85);
+				line-height: 1.7;
+			}
+
+			/* How to Use Section */
+			.how-to-use {
+				margin: 3rem 0;
+				padding: 2rem 0;
+			}
+
+			.how-to-use h2 {
+				font-size: clamp(2.5rem, 5vw, 3.5rem);
+				font-weight: 700;
+				color: #defe55;
+				margin-bottom: 2rem;
+				text-align: center;
+			}
+
+			.usage-steps {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 2rem;
+			}
+
+			.usage-step {
+				text-align: center;
+				padding: 2rem 1.5rem;
+				background: rgba(255, 255, 255, 0.05);
+				border-radius: 20px;
+				transition: transform 0.3s ease;
+			}
+
+			.usage-step:hover {
+				transform: translateY(-5px);
+			}
+
+			.step-number {
+				display: inline-block;
+				width: 50px;
+				height: 50px;
+				background: #defe55;
+				color: var(--dark-green);
+				border-radius: 50%;
+				font-size: 1.5rem;
+				font-weight: 700;
+				line-height: 50px;
+				margin-bottom: 1rem;
+			}
+
+			.usage-step h3 {
+				font-size: 1.3rem;
+				color: #defe55;
+				margin-bottom: 0.5rem;
+			}
+
+			.usage-step p {
+				color: rgba(222, 254, 85, 0.8);
+				font-size: 1rem;
+			}
+
+			/* Stories Section */
+			.stories {
+				margin: 0;
+				padding: 0;
+				position: relative;
+				width: 100vw;
+				margin-left: calc(-50vw + 50%);
+			}
+
+			.stories-background {
+				background: linear-gradient(135deg, rgba(222, 254, 85, 0.95) 0%, rgba(222, 254, 85, 1) 50%, rgba(222, 254, 85, 0.95) 100%);
+				padding: 4rem 2rem 6rem;
+				position: relative;
+				overflow: hidden;
+				min-height: 600px;
+			}
+
+			.stories-container {
+				max-width: 1200px;
+				margin: 0 auto;
+				position: relative;
+			}
+
+			.stories-container h2 {
+				text-align: center;
+				color: var(--dark-green);
+				margin-bottom: 3rem;
+				font-size: clamp(2.5rem, 5vw, 3.5rem);
+			}
+
+			.credits-scroll {
+				height: 500px;
+				overflow: hidden;
+				position: relative;
+				mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+				-webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+			}
+
+			.credit-item {
+				text-align: center;
+				padding: 3rem 2rem;
+				margin-bottom: 2rem;
+				animation: scrollUp 60s linear infinite;
+			}
+
+			.story-title {
+				font-size: 1.8rem;
+				font-weight: 700;
+				color: var(--dark-green);
+				margin-bottom: 1rem;
+			}
+
+			.story-text {
+				font-size: 1.2rem;
+				color: rgba(30, 86, 49, 0.85);
+				line-height: 1.8;
+				max-width: 800px;
+				margin: 0 auto;
+			}
+
+			.credit-item.final {
+				padding: 4rem 2rem;
+			}
+
+			.credit-item.final .story-title {
+				font-size: 2.5rem;
+			}
+
+			.credit-item.final .story-text {
+				font-size: 1.4rem;
+			}
+
+			.credit-item.final-logo {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 1rem;
+				padding: 4rem 2rem;
+			}
+
+			.credit-item.final-logo img {
+				width: 200px;
+				height: auto;
+			}
+
+			.credit-item.final-logo p {
+				font-size: 1.5rem;
+				font-weight: 700;
+				color: var(--dark-green);
+			}
+
+			@keyframes scrollUp {
+				0% {
+					transform: translateY(100%);
+					opacity: 0;
+				}
+				5% {
+					opacity: 1;
+				}
+				95% {
+					opacity: 1;
+				}
+				100% {
+					transform: translateY(-200%);
+					opacity: 0;
+				}
+			}
+
+			/* Footer */
+			footer {
+				background: rgba(0, 0, 0, 0.3);
+				border-top: 1px solid rgba(222, 254, 85, 0.2);
+				padding: 3rem 2rem 2rem;
+				margin-top: 3rem;
+			}
+
+			.footer-content {
+				max-width: 1200px;
+				margin: 0 auto;
+				display: grid;
+				grid-template-columns: 2fr 1fr 1fr 1fr;
+				gap: 3rem;
+				margin-bottom: 3rem;
+			}
+
+			.footer-section h4 {
+				color: #defe55;
+				font-size: 1.2rem;
+				margin-bottom: 1rem;
+				font-weight: 600;
+			}
+
+			.footer-section ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			.footer-section ul li {
+				margin-bottom: 0.75rem;
+			}
+
+			.footer-section a {
+				color: rgba(222, 254, 85, 0.7);
+				text-decoration: none;
+				transition: color 0.3s ease;
+				font-size: 0.95rem;
+			}
+
+			.footer-section a:hover {
+				color: #defe55;
+			}
+
+			.footer-logo {
+				width: 150px;
+				height: auto;
+				margin-bottom: 1rem;
+			}
+
+			.footer-tagline {
+				color: rgba(222, 254, 85, 0.7);
+				font-size: 1rem;
+				margin: 0;
+			}
+
+			.footer-bottom {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding-top: 2rem;
+				border-top: 1px solid rgba(222, 254, 85, 0.1);
+				text-align: center;
+			}
+
+			.footer-bottom p {
+				color: rgba(222, 254, 85, 0.6);
+				font-size: 0.9rem;
+				margin: 0;
+			}
+
+			/* Responsive */
+			@media (max-width: 1024px) {
+				.product-container {
+					grid-template-columns: 1fr;
+					gap: 3rem;
+				}
+
+				.details-grid,
+				.usage-steps {
+					grid-template-columns: 1fr;
+				}
+
+				.product-features {
+					grid-template-columns: 1fr;
+				}
+
+				.footer-content {
+					grid-template-columns: repeat(2, 1fr);
+				}
+
+				.footer-section:first-child {
+					grid-column: 1 / -1;
+				}
+			}
+
+			@media (max-width: 768px) {
+				main {
+					padding: 1rem;
+				}
+
+				header .logo {
+					width: 120px;
+				}
+
+				.product-image-section {
+					padding: 2rem;
+				}
+
+				.product-highlights {
+					grid-template-columns: 1fr;
+				}
+
+				.story-title {
+					font-size: 1.4rem;
+				}
+
+				.story-text {
+					font-size: 1rem;
+				}
+
+				.credit-item.final .story-title {
+					font-size: 1.8rem;
+				}
+
+				.credit-item.final .story-text {
+					font-size: 1.1rem;
+				}
+
+				.footer-content {
+					grid-template-columns: 1fr;
+				}
+
+				.footer-section:first-child {
+					grid-column: auto;
+					text-align: center;
+				}
+
+				.footer-logo {
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+		</style>
+
+		<script>
+			const decreaseBtn = document.getElementById('decrease');
+			const increaseBtn = document.getElementById('increase');
+			const quantityInput = document.getElementById('quantity');
+			const addToCartBtn = document.querySelector('.add-to-cart-btn');
+
+			decreaseBtn?.addEventListener('click', () => {
+				const currentValue = parseInt(quantityInput?.value || '1');
+				if (currentValue > 1) {
+					quantityInput!.value = (currentValue - 1).toString();
+				}
+			});
+
+			increaseBtn?.addEventListener('click', () => {
+				const currentValue = parseInt(quantityInput?.value || '1');
+				const maxValue = parseInt(quantityInput?.getAttribute('max') || '10');
+				if (currentValue < maxValue) {
+					quantityInput!.value = (currentValue + 1).toString();
+				}
+			});
+
+			addToCartBtn?.addEventListener('click', () => {
+				const quantity = quantityInput?.value || '1';
+				alert(`Added ${quantity} Revive bottle(s) to cart!`);
+			});
+		</script>
+	</body>
+</html>
