@@ -85,3 +85,12 @@ Si les images ne s'affichent pas :
 
 4. **Vérifiez l'URL** :
    - Le site doit être accessible à : https://i9offline.github.io/Revive
+
+## ⚠️ Problème de déploiement "purging_cdn"
+
+Si le déploiement reste bloqué sur "purging_cdn" :
+
+1. **Annulez le workflow en cours** dans l'onglet Actions
+2. **Redéclenchez manuellement** : Actions → "Deploy to GitHub Pages" → "Re-run jobs"
+3. **Attendez 5-10 minutes** maximum
+4. **Si ça persiste**, vérifiez dans Settings → Pages que la source est bien "GitHub Actions"
