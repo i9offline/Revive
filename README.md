@@ -68,3 +68,20 @@ Le workflow GitHub Actions :
 3. **Deploy** automatique sur GitHub Pages
 
 Le déploiement se fait automatiquement à chaque push sur `main`.
+
+## 🔍 Dépannage des images
+
+Si les images ne s'affichent pas :
+
+1. **Vérifiez que GitHub Pages est activé** :
+   - Settings → Pages → Source : GitHub Actions
+
+2. **Vérifiez l'onglet Actions** :
+   - Allez sur https://github.com/i9offline/Revive/actions
+   - Assurez-vous que le workflow "Deploy to GitHub Pages" s'exécute sans erreur
+
+3. **Attendez le déploiement** :
+   - Le déploiement peut prendre 2-5 minutes après un push
+
+4. **Vérifiez l'URL** :
+   - Le site doit être accessible à : https://i9offline.github.io/Revive
