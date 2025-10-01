@@ -569,9 +569,10 @@ import { getImagePath, IMAGES } from '../utils/images.ts';
 				left: 0;
 				width: 100%;
 				height: 80px;
-				background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='80' viewBox='0 0 1200 80' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='waveGradient' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:rgba(222,254,85,0.95);stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:rgba(222,254,85,1);stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:rgba(222,254,85,0.95);stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0,40 Q150,10 300,40 T600,40 T900,40 T1200,40 L1200,80 L0,80 Z' fill='url(%23waveGradient)'/%3E%3C/svg%3E");
-				background-size: cover;
+				background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 1200 80' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='waveGradient' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:rgba(222,254,85,0.95);stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:rgba(222,254,85,1);stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:rgba(222,254,85,0.95);stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0,40 Q150,10 300,40 T600,40 T900,40 T1200,40 L1200,80 L0,80 Z' fill='url(%23waveGradient)'/%3E%3C/svg%3E");
+				background-size: 100% 100%;
 				background-repeat: no-repeat;
+				background-position: center;
 			}
 
 			.stories-container {
@@ -1105,8 +1106,8 @@ import { getImagePath, IMAGES } from '../utils/images.ts';
 				}
 
 				.stories-background::before {
-					top: -40px;
-					height: 40px;
+					top: -30px;
+					height: 30px;
 				}
 
 				.how-it-works {
