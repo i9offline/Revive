@@ -13,7 +13,7 @@ Le projet utilise GitHub Actions pour le déploiement automatique. À chaque pus
 ### URL du site
 
 Une fois déployé, votre site sera accessible à l'adresse :
-**https://i9offline.github.io/Revive-LandingPage**
+**https://i9offline.github.io/Revive**
 
 ### Activation de GitHub Pages
 
@@ -57,7 +57,7 @@ Toutes les commandes sont exécutées depuis la racine du projet :
 
 Le fichier `astro.config.mjs` est configuré avec :
 - **Site URL** : `https://i9offline.github.io`
-- **Base path** : `/Revive-LandingPage` (pour la production)
+- **Base path** : `/Revive` (pour la production)
 - **Output** : `static` (site statique)
 
 ## 🔧 Workflow de déploiement
