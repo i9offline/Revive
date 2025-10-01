@@ -1,5 +1,5 @@
 ---
-import { getImagePath, IMAGES } from '../utils/images.ts';
+import { getImagePath, getPagePath, IMAGES } from '../utils/images.ts';
 ---
 
 <html lang="en">
@@ -16,7 +16,7 @@ import { getImagePath, IMAGES } from '../utils/images.ts';
 	</head>
 	<body>
 		<header>
-			<a href={import.meta.env.BASE_URL}>
+			<a href={getPagePath('/')}>
 				<img src={getImagePath(IMAGES.LOGO)} alt="Revive" class="logo">
 			</a>
 		</header>
@@ -29,7 +29,7 @@ import { getImagePath, IMAGES } from '../utils/images.ts';
 			<section class="hero">
 				<p class="tagline">Relax. Reset. Rise.</p>
 				<img src={getImagePath(IMAGES.PRODUCT)} alt="Revive Product" class="hero-product">
-				<a href={`${import.meta.env.BASE_URL}product/`}>
+				<a href={getPagePath('/product')}>
 					<button class="hero-cta">Get Revive Now</button>
 				</a>
 			</section>
@@ -229,7 +229,7 @@ import { getImagePath, IMAGES } from '../utils/images.ts';
 					<h2>Ready to Wake Up Refreshed?</h2>
 					<p class="cta-subtitle">Join thousands who've said goodbye to hangovers</p>
 					<div class="cta-buttons">
-						<a href={`${import.meta.env.BASE_URL}product/`}>
+						<a href={getPagePath('/product')}>
 							<button class="buy-button primary">Get Revive Now</button>
 						</a>
 					</div>
