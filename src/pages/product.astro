@@ -1,12 +1,13 @@
 ---
-import ReviveLogo from '/Revive-Logo.png';
-import ReviveProduct from '/Revive-Product.png';
+// Import images from public directory
+const ReviveLogo = '/Revive-Logo.png';
+const ReviveProduct = '/Revive-Product.png';
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/png" href={ReviveLogo.src} />
+		<link rel="icon" type="image/png" href={`${import.meta.env.BASE_URL}Revive-Logo.png`} />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Revive Product - Break the Hangover</title>
@@ -18,13 +19,13 @@ import ReviveProduct from '/Revive-Product.png';
 	<body>
 		<header>
 			<a href={import.meta.env.BASE_URL}>
-				<img src={ReviveLogo.src} alt="Revive" class="logo">
+				<img src={`${import.meta.env.BASE_URL}Revive-Logo.png`} alt="Revive" class="logo">
 			</a>
 		</header>
 		<main>
 			<div class="product-container">
 				<div class="product-image-section">
-					<img src={ReviveProduct.src} alt="Revive Product" class="product-image">
+					<img src={`${import.meta.env.BASE_URL}Revive-Product.png`} alt="Revive Product" class="product-image">
 				</div>
 
 				<div class="product-info-section">
@@ -177,7 +178,7 @@ import ReviveProduct from '/Revive-Product.png';
 							</div>
 
 							<div class="credit-item final-logo">
-								<img src={ReviveLogo.src} alt="Revive">
+								<img src={`${import.meta.env.BASE_URL}Revive-Logo.png`} alt="Revive">
 								<p>Break the Hangover</p>
 							</div>
 						</div>
@@ -189,7 +190,7 @@ import ReviveProduct from '/Revive-Product.png';
 		<footer>
 			<div class="footer-content">
 				<div class="footer-section">
-					<img src={ReviveLogo.src} alt="Revive" class="footer-logo">
+					<img src={`${import.meta.env.BASE_URL}Revive-Logo.png`} alt="Revive" class="footer-logo">
 					<p class="footer-tagline">Your ultimate recovery companion</p>
 				</div>
 
