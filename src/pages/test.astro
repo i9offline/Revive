@@ -1,0 +1,45 @@
+---
+// Test page to verify image paths
+---
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Image Test - Revive</title>
+</head>
+<body>
+    <h1>Image Path Test</h1>
+    
+    <h2>BASE_URL: {import.meta.env.BASE_URL}</h2>
+    
+    <h3>Logo Test:</h3>
+    <img src={`${import.meta.env.BASE_URL}Revive-Logo.png`} alt="Revive Logo" style="width: 200px; border: 2px solid red;">
+    <p>Path: {`${import.meta.env.BASE_URL}Revive-Logo.png`}</p>
+    
+    <h3>Product Test:</h3>
+    <img src={`${import.meta.env.BASE_URL}Revive-Product.png`} alt="Revive Product" style="width: 200px; border: 2px solid blue;">
+    <p>Path: {`${import.meta.env.BASE_URL}Revive-Product.png`}</p>
+    
+    <h3>Direct paths (should not work in production):</h3>
+    <img src="/Revive-Logo.png" alt="Direct Logo" style="width: 200px; border: 2px solid green;">
+    <p>Path: /Revive-Logo.png</p>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #1E5631;
+            color: #defe55;
+        }
+        img {
+            margin: 10px 0;
+        }
+        p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #ccc;
+        }
+    </style>
+</body>
+</html>
