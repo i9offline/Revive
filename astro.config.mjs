@@ -8,7 +8,6 @@ import react from '@astrojs/react';
 export default defineConfig({
   site: 'https://i9offline.github.io',
   base: '/Revive',
-  outDir: './docs',
   vite: {
     plugins: [tailwindcss()]
   },
