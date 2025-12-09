@@ -1,32 +1,32 @@
 @import "tailwindcss";
 
 @theme {
-  --color-revive-bg: #fbf9f1;
+  --color-revive-bg: #00463d;
   --color-revive-accent: #c8e321;
   --font-sans: "Inter", sans-serif;
 }
 
 body {
   background-color: var(--color-revive-bg);
-  color: #184441;
+  color: #fbf9f1;
   font-family: var(--font-sans);
   overflow-x: hidden;
 }
 
 @layer utilities {
   .glass-panel {
-    @apply bg-white/60 backdrop-blur-3xl border border-[#184441]/5 rounded-3xl;
-    box-shadow: 0 4px 30px rgba(24, 68, 65, 0.05);
+    @apply bg-white/10 backdrop-blur-3xl border border-white/10 rounded-3xl;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   }
 
   .glass-card {
-    @apply bg-white/40 backdrop-blur-2xl border border-[#184441]/5 rounded-2xl transition-all duration-500;
-    box-shadow: 0 4px 20px rgba(24, 68, 65, 0.03);
+    @apply bg-white/5 backdrop-blur-2xl border border-white/10 rounded-2xl transition-all duration-500;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
 
   .glass-card:hover {
-    @apply bg-white/60 border-[#184441]/10 -translate-y-1;
-    box-shadow: 0 10px 30px rgba(24, 68, 65, 0.08);
+    @apply bg-white/10 border-white/20 -translate-y-1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   }
 
   .text-glow {
@@ -34,7 +34,7 @@ body {
   }
 
   .btn-primary {
-    @apply px-8 py-4 rounded-full bg-[#c8e321] text-[#184441] font-semibold transition-all duration-300 hover:bg-[#d4f025] hover:scale-105;
+    @apply px-8 py-4 rounded-full bg-[#c8e321] text-[#00463d] font-semibold transition-all duration-300 hover:bg-[#d4f025] hover:scale-105;
   }
 
   .btn-primary:hover {
