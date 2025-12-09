@@ -1,0 +1,44 @@
+---
+const faqs = [
+  {
+    question: "How does Revive work?",
+    answer: "Revive uses a scientifically formulated blend of vitamins and natural ingredients to accelerate detoxification and replenish nutrients lost during alcohol consumption."
+  },
+  {
+    question: "When should I take it?",
+    answer: "For best results, take one shot of Revive before going to bed after a night out. You can also take it the next morning for a boost."
+  },
+  {
+    question: "Is it safe?",
+    answer: "Yes, Revive is made with high-quality, natural ingredients and is manufactured in a certified facility."
+  },
+  {
+    question: "When will Revive be available?",
+    answer: "Revive is not yet available, but it will be soon. Join our waitlist to be notified when we launch."
+  }
+];
+---
+
+<section class="py-32 px-6 relative">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold text-center text-[#184441] mb-16 tracking-tight">Frequently Asked <span class="text-[#c8e321]">Questions</span></h2>
+    
+    <div class="space-y-4">
+      {faqs.map((faq) => (
+        <details class="group glass-card overflow-hidden transition-all duration-300 open:bg-white/60 hover:bg-white/50 border-[#184441]/5">
+          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+            <h3 class="text-lg font-medium text-[#184441] group-hover:text-[#c8e321] transition-colors">{faq.question}</h3>
+            <span class="text-[#c8e321] transform group-open:rotate-180 transition-transform duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-[#184441]/70 leading-relaxed font-light">
+            {faq.answer}
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
