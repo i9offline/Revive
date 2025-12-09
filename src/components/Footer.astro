@@ -1,7 +1,10 @@
+---
+import { getAssetPath } from '../utils/url.js';
+---
 <footer class="py-16 px-6 border-t border-white/5 bg-white/5 backdrop-blur-xl">
   <div class="max-w-7xl mx-auto flex flex-col items-center gap-8">
     <div>
-      <img src={import.meta.env.BASE_URL + "images/revive-logo-v2.png"} alt="Revive" class="h-8 w-auto" />
+      <img src={getAssetPath("images/revive-logo-v2.png")} alt="Revive" class="h-8 w-auto" />
     </div>
     
     <div class="flex gap-10 text-white/70 font-medium text-sm">

@@ -1,6 +1,9 @@
 ---
 ---
 
+---
+import { getAssetPath } from '../utils/url.js';
+---
 <section class="py-24 px-6 bg-transparent overflow-hidden">
   <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
     
@@ -71,9 +74,9 @@
     <div class="relative h-full min-h-[600px] rounded-[2.5rem] overflow-hidden shadow-2xl">
       <div class="absolute inset-0 bg-[#00463d]/20 z-10"></div>
       <img 
-        src={import.meta.env.BASE_URL + "images/revive-drinking.jpg"} 
-        alt="Drinking Revive" 
-        class="absolute inset-0 w-full h-full object-cover"
+        src={getAssetPath("images/revive-drinking.jpg")} 
+        alt="Revive Lifestyle" 
+        class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
       />
     </div>
 
