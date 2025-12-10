@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function FloatingBottle({ imageSrc }) {
   return (
-    <div className="relative w-72 h-auto md:w-80 lg:w-96">
+    <div className="relative w-80 h-auto md:w-96 lg:w-[450px]">
       <img
         src={imageSrc}
         alt="Revive Bottle"
