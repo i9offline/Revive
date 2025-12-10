@@ -1,16 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
 import Hero from '../components/Hero.astro';
 import VideoSection from '../components/VideoSection.astro';
 import BenefitsTimeline from '../components/BenefitsTimeline.astro';
 import StoryTimeline from '../components/StoryTimeline.astro';
-import FAQ from '../components/FAQ.astro';
 import ComparisonSection from '../components/ComparisonSection.astro';
+import FAQ from '../components/FAQ.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Revive - Next-Morning Clarity">
-	<main class="overflow-x-hidden">
+<Layout title="Revive - Wake Up Refreshed">
+	<Navbar />
+	<main>
 		<Hero />
 		<VideoSection />
 		<BenefitsTimeline />

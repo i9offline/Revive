@@ -1,14 +1,14 @@
 <link href="https://unpkg.com/cloudinary-video-player@edge/dist/cld-video-player.min.css" rel="stylesheet">
 <script src="https://unpkg.com/cloudinary-video-player@edge/dist/cld-video-player.min.js" type="text/javascript"></script>
 
-<section class="py-32 px-6 flex justify-center relative overflow-hidden">
-  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#c8e321]/5 to-transparent pointer-events-none"></div>
-  
-  <div class="relative w-full max-w-7xl aspect-video rounded-3xl overflow-hidden group shadow-xl transform-gpu">
-    <video
-      id="player"
-      class="cld-video-player cld-fluid w-full h-full object-cover"
-    ></video>
+<section class="py-16 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="relative aspect-video rounded-3xl overflow-hidden">
+      <video
+        id="player"
+        class="cld-video-player cld-fluid w-full h-full object-cover"
+      ></video>
+    </div>
   </div>
 </section>
 
@@ -20,15 +20,12 @@
     background-color: transparent !important;
   }
   
-  /* Hide Cloudinary controls and overlays if they persist */
   .vjs-control-bar, .vjs-big-play-button, .vjs-poster {
     display: none !important;
   }
   
-  /* Ensure the wrapper respects the border radius */
   .cld-video-player .vjs-tech {
     object-fit: cover !important;
-    border-radius: 1.5rem !important; /* Match rounded-3xl */
   }
 </style>
 

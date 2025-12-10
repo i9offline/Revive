@@ -1,67 +1,74 @@
 @import "tailwindcss";
 
 @theme {
-  --color-revive-bg: #00463d;
+  --color-revive-bg: #001a16;
   --color-revive-accent: #c8e321;
   --font-sans: "Inter", sans-serif;
 }
 
+/* ===== BASE STYLES ===== */
 body {
-  background-color: var(--color-revive-bg);
+  background: #001a16;
   color: #fbf9f1;
   font-family: var(--font-sans);
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
-@layer utilities {
-  .glass-panel {
-    @apply bg-white/10 backdrop-blur-3xl border border-white/10 rounded-3xl;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  }
+/* ===== NAVBAR GLASS ===== */
+.navbar-glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
 
-  .glass-card {
-    @apply bg-white/5 backdrop-blur-2xl border border-white/10 rounded-2xl transition-all duration-500;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
+/* ===== BUTTONS ===== */
+.btn-primary {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  background: #c8e321;
+  color: #00251f;
+  transition: all 0.2s ease;
+}
 
-  .glass-card:hover {
-    @apply bg-white/10 border-white/20 -translate-y-1;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  }
+.btn-primary:hover {
+  background: #d4f025;
+  transform: translateY(-1px);
+}
 
-  .text-glow {
-    text-shadow: 0 0 30px rgba(200, 227, 33, 0.3);
-  }
+/* ===== BACKGROUND ORBS ===== */
+.liquid-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.3;
+  pointer-events: none;
+}
 
-  .btn-primary {
-    @apply px-8 py-4 rounded-full bg-[#c8e321] text-[#00463d] font-semibold transition-all duration-300 hover:bg-[#d4f025] hover:scale-105;
-  }
+.liquid-orb-accent {
+  background: #c8e321;
+}
 
-  .btn-primary:hover {
-    box-shadow: 0 0 20px rgba(200, 227, 33, 0.4);
+.liquid-orb-white {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(30px, -30px);
   }
 }
 
-@keyframes blob {
-  0% {
-    transform: translate(0px, 0px) scale(1);
-  }
-
-  33% {
-    transform: translate(30px, -50px) scale(1.1);
-  }
-
-  66% {
-    transform: translate(-20px, 20px) scale(0.9);
-  }
-
-  100% {
-    transform: translate(0px, 0px) scale(1);
-  }
-}
-
-.animate-blob {
-  animation: blob 7s infinite;
+.animate-float {
+  animation: float 20s ease-in-out infinite;
 }
 
 .animation-delay-2000 {
@@ -70,4 +77,28 @@ body {
 
 .animation-delay-4000 {
   animation-delay: 4s;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== SELECTION ===== */
+::selection {
+  background: rgba(200, 227, 33, 0.3);
+  color: white;
 }

@@ -1,0 +1,86 @@
+---
+import { Image } from 'astro:assets';
+import logoImage from '../assets/images/revive-logo-v2.png';
+---
+
+<div class="fixed top-6 left-0 right-0 z-50 flex justify-center px-6">
+  <nav class="w-full max-w-3xl navbar-glass rounded-full px-6 py-3 nav-animate">
+    <div class="flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center">
+        <Image src={logoImage} alt="Revive" class="h-5 w-auto" />
+      </a>
+
+      <!-- Navigation Links (Desktop) -->
+      <div class="hidden md:flex items-center gap-6">
+        <a href="#benefits" class="text-white/60 hover:text-white text-sm transition-colors">Benefits</a>
+        <a href="#how-it-works" class="text-white/60 hover:text-white text-sm transition-colors">How It Works</a>
+        <a href="#faq" class="text-white/60 hover:text-white text-sm transition-colors">FAQ</a>
+      </div>
+
+      <!-- CTA Button -->
+      <a href="#waitlist" class="hidden sm:flex btn-primary py-2 px-5 text-sm">
+        Join Waitlist
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-white/60 hover:text-white transition-colors" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+</div>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="fixed top-24 left-0 right-0 z-50 px-6 hidden md:hidden">
+  <div class="max-w-3xl mx-auto navbar-glass rounded-2xl p-6 space-y-4">
+    <a href="#benefits" class="block text-white/60 hover:text-white text-sm py-2 transition-colors">Benefits</a>
+    <a href="#how-it-works" class="block text-white/60 hover:text-white text-sm py-2 transition-colors">How It Works</a>
+    <a href="#faq" class="block text-white/60 hover:text-white text-sm py-2 transition-colors">FAQ</a>
+    <a href="#waitlist" class="block btn-primary text-center py-3 text-sm mt-4">Join Waitlist</a>
+  </div>
+</div>
+
+<script>
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileMenuBtn?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+
+  // Close on link click
+  mobileMenu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu?.classList.add('hidden');
+    });
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    if (!target.closest('nav') && !target.closest('#mobile-menu')) {
+      mobileMenu?.classList.add('hidden');
+    }
+  });
+</script>
+
+<style>
+  .nav-animate {
+    animation: slideDown 0.6s ease-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

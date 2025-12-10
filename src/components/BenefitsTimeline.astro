@@ -2,80 +2,80 @@
 import { Image } from 'astro:assets';
 import drinkingImage from '../assets/images/revive-drinking.jpg';
 ---
-<section class="py-24 px-6 bg-transparent overflow-hidden">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+<section id="benefits" class="py-32 px-6 relative overflow-hidden">
+  
+  <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
     
-    <!-- Left Column: Text Content -->
+    <!-- Left Column: Image -->
+    <div class="relative">
+      <div class="relative rounded-3xl overflow-hidden aspect-[4/5]">
+        <Image 
+          src={drinkingImage} 
+          alt="Revive Lifestyle" 
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#001a16] via-transparent to-transparent"></div>
+      </div>
+    </div>
+
+    <!-- Right Column: Text Content -->
     <div class="flex flex-col space-y-12">
       
       <div class="space-y-6">
-        <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight tracking-tight">
-          What benefits will you experience with Revive?
+        <p class="text-[#c8e321] text-sm font-medium uppercase tracking-wider">How It Works</p>
+        <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+          Your journey to better mornings
         </h2>
-        <p class="text-white/80 text-lg leading-relaxed">
-          Each dose delivers optimal recovery and mental clarity from the moment you wake up. Revive works while you sleep to support your liver and deeply rehydrate your body. Here is what you can expect:
-        </p>
       </div>
 
       <!-- Timeline -->
-      <div class="relative space-y-12">
-        <!-- Vertical Line -->
-        <div class="absolute left-[11px] top-2 bottom-2 w-0.5 bg-white/10"></div>
-
+      <div class="space-y-10">
+        
         <!-- Item 1 -->
-        <div class="relative flex gap-8">
-          <div class="absolute left-0 top-1.5 w-6 h-6 rounded-full bg-[#c8e321] border-4 border-[#00463d] shadow-sm z-10"></div>
-          <div class="pl-8">
-            <div class="inline-block px-4 py-1.5 rounded-full bg-[#c8e321]/20 text-[#c8e321] font-bold text-sm mb-3">
-              Before bed: The Revive Ritual
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2">Immediate Night Action</h3>
-            <p class="text-white/70 leading-relaxed">
-              Drink Revive right before sleep. Its formula works immediately to support your liver and rehydrate your body throughout the night, ensuring optimal recovery.
+        <div class="flex gap-6">
+          <div class="shrink-0 w-12 h-12 rounded-full bg-[#c8e321] flex items-center justify-center text-[#00251f] font-bold">
+            1
+          </div>
+          <div>
+            <p class="text-[#c8e321] text-sm font-medium mb-2">Before Bed</p>
+            <h3 class="text-xl font-semibold text-white mb-2">Drink one shot</h3>
+            <p class="text-white/50 leading-relaxed">
+              Take Revive right before sleep. Our formula starts working immediately.
             </p>
           </div>
         </div>
 
         <!-- Item 2 -->
-        <div class="relative flex gap-8">
-          <div class="absolute left-0 top-1.5 w-6 h-6 rounded-full bg-[#c8e321] border-4 border-[#00463d] shadow-sm z-10"></div>
-          <div class="pl-8">
-            <div class="inline-block px-4 py-1.5 rounded-full bg-[#c8e321]/20 text-[#c8e321] font-bold text-sm mb-3">
-              Next Morning: Wake Up Fresh
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2">Mental Clarity & Energy</h3>
-            <p class="text-white/70 leading-relaxed">
-              Open your eyes with zero brain fog. No headaches, no nausea. You're ready to start your day as if nothing happened.
+        <div class="flex gap-6">
+          <div class="shrink-0 w-12 h-12 rounded-full bg-[#c8e321]/20 border border-[#c8e321]/30 flex items-center justify-center text-[#c8e321] font-bold">
+            2
+          </div>
+          <div>
+            <p class="text-[#c8e321] text-sm font-medium mb-2">While You Sleep</p>
+            <h3 class="text-xl font-semibold text-white mb-2">Recovery mode</h3>
+            <p class="text-white/50 leading-relaxed">
+              Your liver gets support, your body rehydrates deeply.
             </p>
           </div>
         </div>
 
         <!-- Item 3 -->
-        <div class="relative flex gap-8">
-          <div class="absolute left-0 top-1.5 w-6 h-6 rounded-full bg-[#c8e321] border-4 border-[#00463d] shadow-sm z-10"></div>
-          <div class="pl-8">
-            <div class="inline-block px-4 py-1.5 rounded-full bg-[#c8e321]/20 text-[#c8e321] font-bold text-sm mb-3">
-              The Day: Sustained Performance
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2">Productivity & Well-being</h3>
-            <p class="text-white/70 leading-relaxed">
-              The recovery effect lasts. You stay focused and productive all day long, avoiding the usual afternoon crash.
+        <div class="flex gap-6">
+          <div class="shrink-0 w-12 h-12 rounded-full bg-[#c8e321]/20 border border-[#c8e321]/30 flex items-center justify-center text-[#c8e321] font-bold">
+            3
+          </div>
+          <div>
+            <p class="text-[#c8e321] text-sm font-medium mb-2">Next Morning</p>
+            <h3 class="text-xl font-semibold text-white mb-2">Wake up fresh</h3>
+            <p class="text-white/50 leading-relaxed">
+              No headache, no brain fog. Ready to seize the day.
             </p>
           </div>
         </div>
 
       </div>
 
-    </div>
-
-    <!-- Right Column: Image -->
-    <div class="relative h-full min-h-[600px] rounded-[2.5rem] overflow-hidden shadow-2xl">
-      <div class="absolute inset-0 bg-[#00463d]/20 z-10"></div>
-      <Image 
-        src={drinkingImage} 
-        alt="Revive Lifestyle" 
-        class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-      />
     </div>
 
   </div>
