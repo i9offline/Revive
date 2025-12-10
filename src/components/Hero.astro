@@ -1,6 +1,7 @@
 ---
 import FloatingBottle from './FloatingBottle.jsx';
-import { getAssetPath } from '../utils/url.js';
+import { Image } from 'astro:assets';
+import logoImage from '../assets/images/revive-logo-v2.png';
 ---
 
 <section class="relative min-h-screen flex items-center justify-center px-6 py-12 overflow-hidden">
@@ -19,7 +20,7 @@ import { getAssetPath } from '../utils/url.js';
       <!-- Logo -->
       <div class="relative inline-block mb-2 self-start">
          <div class="absolute inset-0 bg-white/10 blur-xl rounded-full scale-125"></div>
-         <img src={getAssetPath("images/revive-logo-v2.png")} alt="Revive" class="relative h-16 w-auto" />
+         <Image src={logoImage} alt="Revive" class="relative h-16 w-auto" />
       </div>
 
       <!-- Headline -->
