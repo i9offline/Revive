@@ -2,6 +2,7 @@
 import FloatingBottle from './FloatingBottle.jsx';
 import { Image } from 'astro:assets';
 import logoImage from '../assets/images/revive-logo-v2.png';
+import bottleImage from '../assets/images/revive-bottle.png';
 ---
 
 <section class="relative min-h-screen flex items-center justify-center px-6 py-12 overflow-hidden">
@@ -166,7 +167,7 @@ import logoImage from '../assets/images/revive-logo-v2.png';
        
        <!-- Bottle Component -->
        <div class="z-10 transform scale-100 lg:scale-110">
-         <FloatingBottle client:load />
+         <FloatingBottle client:load imageSrc={bottleImage.src} />
        </div>
     </div>
   </div>
